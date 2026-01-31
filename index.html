@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fleet Tech & Safety Installations</title>
+  <meta name="description" content="Professional installation and maintenance of dash cams, GPS, ELDs, backup cameras and fleet safety tech — without downtime." />
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Fleet Tech & Safety Installations" />
+  <meta property="og:description" content="Professional installation and maintenance of fleet safety technology — dash cams, GPS, ELDs and more." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616594708651-3a5b6d09d6b2?auto=format&fit=crop&w=1470&q=80" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root{
+      --brand:#004085;
+      --cta:#ffc107;
+      --cta-hover:#e0a800;
+      --vh:1vh;
+      --max-width:1200px;
+      --focus: 3px solid rgba(255,193,7,0.6);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+    html,body{height:100%;color:#222;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;height:auto;line-height:0;border:0;}
+
+    .skip-link{
+      position:absolute;left:0;top:-40px;background:#000;color:#fff;padding:.5rem 1rem;z-index:200;
+      transition:top .18s ease-in-out;
+    }
+    .skip-link:focus{top:8px;outline:none;}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:150;
+    }
+    .brand{font-weight:700;color:var(--brand);font-size:1.05rem;}
+    .header-actions{display:flex;gap:.5rem;align-items:center;}
+    .btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;font-weight:600;background:var(--cta);color:#000;border:none;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.08);transition:transform .12s ease, background .12s;}
+    .btn:active{transform:translateY(1px)}
+    .btn:hover{background:var(--cta-hover)}
+    .btn:focus-visible{outline:none;box-shadow:var(--focus);border-radius:8px;}
+
+    main{max-width:var(--max-width);margin:0 auto;padding:0 1rem;}
+
+    .hero{position:relative;min-height:calc(var(--vh,1vh) * 80);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:3.5rem 1rem;background-image:url('https://images.unsplash.com/photo-1616594708651-3a5b6d09d6b2?auto=format&fit=crop&w=1470&q=80');background-size:cover;background-position:center center;background-repeat:no-repeat;border-bottom:4px solid rgba(0,0,0,0.04);}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.45) 100%);pointer-events:none;}
+    .hero .content{position:relative;z-index:2;max-width:900px;}
+    .hero h1{font-size:2.4rem;line-height:1.05;margin-bottom:.75rem;text-shadow:0 1px 2px rgba(0,0,0,0.45);}
+    .hero p{font-size:1.05rem;margin-bottom:1.25rem;opacity:0.98;max-width:680px;text-shadow:0 1px 2px rgba(0,0,0,0.35);}
+    .hero .btn-cta{padding:0.9rem 1.6rem;border-radius:10px;font-weight:700;}
+
+    section{padding:3rem 0;}
+    section h2{text-align:center;color:var(--brand);margin-bottom:1.25rem;font-size:1.6rem;}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;}
+    .service-item{background:#f8f9fa;padding:1rem;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05);text-align:center;transition:transform .18s;}
+    .service-item:focus-within,.service-item:hover{transform:translateY(-6px);}
+    .service-item img{width:64px;height:64px;margin:0 auto 0.75rem;}
+
+    .step{background:#eef2f6;padding:1rem;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.04);text-align:center;}
+    .step h4{color:var(--brand);margin-bottom:.5rem;font-size:1rem;}
+
+    footer{background:var(--brand);color:#fff;padding:2rem 1rem;margin-top:2rem;text-align:center;}
+    footer a{color:var(--cta);}
+
+    .mobile-cta{display:none}
+    @media (max-width:768px){
+      .hero{min-height:calc(var(--vh,1vh) * 60);padding:2.25rem 1rem;}
+      .hero h1{font-size:1.6rem;}
+      .hero p{font-size:.95rem;}
+      .header-actions{gap:.4rem}
+      .service-item{padding:1rem}
+      .mobile-cta{display:block;position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:999;box-shadow:0 6px 18px rgba(0,0,0,0.18);}
+    }
+
+    a:focus-visible, button:focus-visible{outline:none;box-shadow:var(--focus);border-radius:8px;}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="brand" aria-label="Fleet Tech and Safety">Fleet Tech & Safety</div>
+    <div class="header-actions" role="navigation" aria-label="Top links">
+      <a class="btn" href="#services">Our Services</a>
+      <a class="btn" href="#contact" aria-label="Contact us">Contact</a>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero" aria-labelledby="hero-heading" role="region">
+      <div class="content">
+        <h1 id="hero-heading">Keep Your Fleet Compliant & Protected</h1>
+        <p>Professional installation and maintenance of dash cams, GPS, ELDs, backup cameras, and other fleet safety technology — without downtime or headaches.</p>
+        <a class="btn btn-cta" href="#contact">Schedule Your Fleet Install</a>
+      </div>
+    </section>
+
+    <section id="why-us" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Choose Us</h2>
+      <div class="services" role="list">
+        <div class="service-item" role="listitem" tabindex="0">
+          <h3>Certified Technicians</h3>
+          <p>Experienced, trained, and vetted for every fleet type.</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <h3>On-Site Service</h3>
+          <p>We come to your fleet, saving you time and downtime.</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <h3>Fast, Reliable Installs</h3>
+          <p>One-stop, done right the first time.</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <h3>Full Compliance Docs</h3>
+          <p>Satisfies insurance and regulatory requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <div class="services" role="list">
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/video.png" alt="Dash camera icon" width="80" height="80" loading="lazy">
+          <h3>Dash Cameras</h3>
+          <p>Forward and driver-facing</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/gps-device.png" alt="GPS device icon" width="80" height="80" loading="lazy">
+          <h3>GPS & ELD Devices</h3>
+          <p>Tracking and compliance</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/rear-view-camera.png" alt="Backup camera icon" width="80" height="80" loading="lazy">
+          <h3>Backup Cameras</h3>
+          <p>Blind spot detection</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/trailer.png" alt="Trailer tracker icon" width="80" height="80" loading="lazy">
+          <h3>Trailer & Asset Trackers</h3>
+          <p>Know where your assets are</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/speedometer.png" alt="Speed limiter icon" width="80" height="80" loading="lazy">
+          <h3>Speed Limiters</h3>
+          <p>Idle and speed management</p>
+        </div>
+        <div class="service-item" role="listitem" tabindex="0">
+          <img src="https://img.icons8.com/ios/100/000000/alarm.png" alt="Panic button icon" width="80" height="80" loading="lazy">
+          <h3>Panic Buttons</h3>
+          <p>In-cab alerts for emergencies</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-heading-works">
+      <h2 id="how-heading-works">How It Works</h2>
+      <div class="services steps" role="list">
+        <div class="step" role="listitem" tabindex="0">
+          <h4>1. Book a Consultation</h4>
+          <p>Tell us your fleet size and needs.</p>
+        </div>
+        <div class="step" role="listitem" tabindex="0">
+          <h4>2. We Plan Your Install</h4>
+          <p>Customized plan by vehicle type.</p>
+        </div>
+        <div class="step" role="listitem" tabindex="0">
+          <h4>3. We Come to You</h4>
+          <p>Fast, clean, professional installations.</p>
+        </div>
+        <div class="step" role="listitem" tabindex="0">
+          <h4>4. You Drive Safer</h4>
+          <p>Full documentation and ongoing support.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" role="contentinfo">
+    <p>Contact Us Today!</p>
+    <p>Phone: <a href="tel:1234567890">123‑456‑7890</a> | Email: <a href="mailto:info@fleetinstallpros.com">info@fleetinstallpros.com</a></p>
+    <p>&copy; 2026 Fleet Tech & Safety Installations. Serving fleets nationwide.</p>
+  </footer>
+
+  <a class="btn btn-cta mobile-cta" href="#contact" aria-label="Contact us">Contact Fleet Installs</a>
+
+  <script>
+    (function(){
+      function setVh(){
+        document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+      }
+      setVh();
+      let rtid = null;
+      window.addEventListener('resize', function(){ if(rtid) clearTimeout(rtid); rtid = setTimeout(setVh, 150); }, {passive:true});
+    })();
+  </script>
+</body>
+  </html>
